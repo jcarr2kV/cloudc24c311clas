@@ -1,0 +1,17 @@
+@EndUserText.label: 'Multiple Grant'
+@MappingRole: true
+define role ZAC_02_C311_T100578 {
+    grant
+        select
+            on
+                zi_cds_33_c311_t100578
+                    where
+                        CountryCode = 'US';
+                        
+    grant
+        select
+            on
+                zi_cds_34_c311_t100578
+                    where Status = 'N';
+                        
+}
